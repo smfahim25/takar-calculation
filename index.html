@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takar Calculation</title>
+    <!-- fav icon  -->
+    <link rel="shortcut icon" href="images/currency.png" type="image/x-icon">
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- main section start -->
+    <main>
+        <h1 class="text-center mt-3 fw-bolder h-color">Takar Calculation</h1>
+        <div>
+            <div class="container mt-4">
+                <div class="row g-4">
+                    <div class=" col-lg-6 col-sm-12">
+                        <img class="w-100 mt-5" src="images/vector.jpg" alt="money photo">
+                    </div>
+                    <div class="col-lg-6 col-sm-12 bg-color">
+                        <h3 class="text-center">Income</h3>
+                        <div class="row mb-3 ms-5">
+                            <label class="col-sm-2 col-form-label fw-bold">Income:</label>
+                            <div class="col-sm-10">
+                                <input id="income-input" type="text" class="form-control w-75 b-color">
+                            </div>
+                        </div>
+                        <!-- expenses part -->
+                        <div>
+                            <h3 class="text-center">Expenses</h3>
+                            <div class="row ms-5">
+                                <label class="col-sm-2 mb-3 col-form-label fw-bold">Food:</label>
+                                <div class="col-sm-10">
+                                    <input id="food" type="text" class="form-control w-75 b-color">
+                                </div>
+                            </div>
+                            <div class="row mb-3 ms-5">
+                                <label class="col-sm-2 col-form-label fw-bold">Rent:</label>
+                                <div class="col-sm-10">
+                                    <input id="rent" type="text" class="form-control w-75 b-color">
+                                </div>
+                            </div>
+                            <div class="row mb-3 ms-5">
+                                <label class="col-sm-2 col-form-label fw-bold">Clothes:</label>
+                                <div class="col-sm-10">
+                                    <input id="cloth" type="text" class="form-control w-75 b-color">
+                                </div>
+                            </div>
+                            <div class="d-grid gap-2 col-4 mx-auto">
+                                <button id="calculate-button" class="btn btn-primary" type="button">Calculate</button>
+                            </div>
+                            <div class="text-center mt-3">
+                                <h3>Total Expenses: $<span id="total-used">0</span></h3>
+                                <h3>Balance: $<span id="balance">0</span></h3>
+                            </div>
+                        </div>
+                        <!-- savings part -->
+                        <div class="row row-cols-lg-auto g-3 align-items-center ms-4">
+                            <div class="col-12">
+                                <div class="input-group">
+                                    <div class="fw-bold ms-3 me-2 mt-2">Save: </div>
+                                    <input id="saving-input" type="text" class="form-control w-50 b-color">
+                                    <div class="ms-3 mt-2">%</div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button id="save-btn" type="submit" class="btn btn-primary ">Save</button>
+                            </div>
+                        </div>
+                        <div class="text-center mt-3">
+                            <h3>Saving Amount: $<span id="save-money">0</span></h3>
+                            <h3>Remaining Balance: $<span id="remain-balance">0</span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </main>
+    <!-- main section end -->
+    <!-- Bootstrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- external js file -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
